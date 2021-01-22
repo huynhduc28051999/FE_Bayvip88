@@ -1,24 +1,33 @@
-import logo from './logo.svg';
+import React, { Suspense } from 'react'
 import './App.css';
+import { createBrowserHistory } from 'history'
+import Spinner from './components/Spinner'
+import router from './routers/routers'
+import { Route, Router, Switch, Redirect } from 'react-router-dom';
+
+
+const hist = createBrowserHistory()
 
 function App() {
+  const mapRouter = (router) => {
+    return router.map((router, index) => {
+      return <Route path={router.path}
+        component={router.component}
+        key={index}
+        exact={router.exact}
+      />
+    })
+  }
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router history={hist}>
+      <Suspense fallback={<Spinner />}>
+        <Switch>
+          <Route path="dashboard" component={React.lazy(() => import('./layouts/Admin'))} />
+          {mapRouter(router)} */}
+          <Redirect to="/" />
+        </Switch>
+      </Suspense>
+    </Router>
   );
 }
 

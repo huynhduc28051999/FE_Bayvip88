@@ -1,0 +1,120 @@
+#dvheader {
+    height: 126px;
+    position: absolute;
+    width: 100%;
+    z-index: 2;
+  }
+  
+  
+  #dvheader .non_login_header {
+    position: absolute;
+  }
+  
+  
+  #dvheader .login_header {
+    background: url(../../assets/images/asset_button.png) no-repeat;
+    background-position: -0px -227px;
+    width: 100%;
+    height: 112px;
+    position: absolute;
+  }
+  
+  
+  #dvheader .btn-login {
+    background: url(../../assets/images/asset_button.png) no-repeat;
+    background-position: -917px -0px;
+    width: 219px;
+    height: 98px;
+    cursor: pointer;
+    position: absolute;
+    left: 768px;
+    top: 9px;
+  }
+  
+  
+  #dvheader .btn-login:hover {
+    -webkit-filter: brightness(120%);
+    filter: brightness(120%);
+  }
+  
+  #dvheader .btn-register {
+    background: url(../../assets/images/asset_button.png) no-repeat;
+    background-position: -698px -0px;
+    width: 219px;
+    height: 98px;
+    cursor: pointer;
+    position: absolute;
+    left: 1003px;
+    top: 9px;
+  }
+  #dvheader .btn-register:hover {
+    -webkit-filter: brightness(120%);
+    filter: brightness(120%);
+  }
+  
+  #dvheader .btn-facebook {
+    background: url(../../assets/images/asset_button.png) no-repeat;
+    background-position: -596px -0px;
+    width: 102px;
+    height: 102px;
+    cursor: pointer;
+    position: absolute;
+    left: 658px;
+    top: 9px;
+  }
+  
+  #dvheader .btn-facebook:hover {
+    -webkit-filter: brightness(120%);
+    filter: brightness(120%);
+  }
+  
+  
+  
+  
+  #dvheader .btn-menu {
+    top: 7px;
+    position: absolute;
+    right: 5px;
+    cursor: pointer;
+    background: url(../../assets/images/asset_button.png) no-repeat;
+    background-position: -241px -0px;
+    width: 85px;
+    height: 85px;
+  }
+  
+  
+  #dvheader .btn-cardBlock {
+    top: 7px;
+    position: absolute;
+    right: 104px;
+    cursor: pointer;
+    background: url(../../assets/images/asset_button.png) no-repeat;
+    background-position: -326px -0px;
+    width: 85px;
+    height: 85px;
+  }
+  
+  
+  #dvheader .btn-dongbang {
+    top: 7px;
+    position: absolute;
+    right: 203px;
+    cursor: pointer;
+    background: url(../../assets/images/asset_button.png) no-repeat;
+    background-position: -156px -0px;
+    width: 85px;
+    height: 85px;
+  }
+  
+  
+  
+  #dvheader .setting-board {
+    top: 7px;
+    position: absolute;
+    right: 84px;
+    display: none;
+  }
+  
+  #dvheader .setting-board.active {
+    display: block;
+  }
