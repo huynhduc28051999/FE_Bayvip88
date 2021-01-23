@@ -2,7 +2,7 @@ import React from 'react'
 import Dvheader from '../components/dvheader/Dvheader'
 import Winners from '../components/winners/Winners'
 import Appgame from '../components/appgame/Appgame'
-import Bannners from '../components/banners/Bannners'
+// import Bannners from '../components/banners/Bannners'
 import Lobby from '../components/lobby/Lobby'
 import Cardgame from '../components/cardgame/Cardgame'
 import Footer from '../components/footer/Footer';
@@ -18,12 +18,12 @@ export default function Game() {
 					<Dvheader />
 					<Winners />
 					<Appgame />
-					<Bannners />
+					{/* <Bannners /> */}
 					<Lobby />
 					<Cardgame />
 					<Footer />
 				</div>
-				<div className="over_poup resizeable" style={{ zoom: '1', display: 'block' }}>
+				<div className="over_poup resizeable" style={{ zoom: '1', display: 'none' }}>
 					{/* <Login /> */}
 					{/* <Register /> */}
 					{/* <Payment /> */}
